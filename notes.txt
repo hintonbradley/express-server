@@ -1,0 +1,28 @@
+************
+** SET UP **
+************
+
+1. Create a root directory
+
+2. Create a package.json
+    $ npm init
+
+3. Install dependencies (Express and Nodemon)
+    $ npm i --s express Nodemon
+
+4. Create an app.js file and import Express, and update in package.json file
+    $ touch app.js
+    
+package.json
+    ...
+    "main": "app.js",
+    ...
+
+5. Create an instance of Express and set up your server in app.js file:
+const express = require('express');
+
+const app = express();
+
+app.listen(7007, () => {
+    console.log('Listening on port 7007')}
+);
